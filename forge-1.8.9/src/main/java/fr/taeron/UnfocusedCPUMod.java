@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 
-@Mod(modid = "UnfocusedCPUMod", version = "0.1")
+@Mod(modid = "UnfocusedCPUMod", version = "0.2")
 public class UnfocusedCPUMod {
 
 	private boolean focused;
