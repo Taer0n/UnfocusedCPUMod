@@ -1,0 +1,16 @@
+[
+{
+  "modid": "UnfocusedCPUMod",
+  "name": "UnfocusedCPUMod",
+  "description": "Reduces the CPU usage when your game is running in background",
+  "version": "0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["koalaQ_Q"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
