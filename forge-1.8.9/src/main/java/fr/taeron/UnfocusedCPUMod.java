@@ -26,14 +26,14 @@ public class UnfocusedCPUMod {
 		if(Minecraft.getMinecraft().theWorld == null){
 			return;
 		}
-		if(!Display.isActive() && this.focused){
+		if(!Display.isActive() && this.focused){ 
 			this.focused = false;
 			Thread th = new Thread(new Runnable(){
 				@Override
 				public void run(){
 					try {
 						Thread.sleep(500);
-						Minecraft.getMinecraft().gameSettings.limitFramerate = 1;
+						Minecraft.getMinecraft().gameSettings.limitFramerate = 3;
 						Display.setTitle("[Unfocused] " + Display.getTitle());
 					} catch (InterruptedException e) {
 						e.printStackTrace();
@@ -42,7 +42,7 @@ public class UnfocusedCPUMod {
 			});
 			th.run();
 			
-		} else if (Display.isActive() && Minecraft.getMinecraft().gameSettings.limitFramerate == 1){
+		} else if (Display.isActive() && Minecraft.getMinecraft().gameSettings.limitFramerate == 3){
 			this.focused = true;
 			Minecraft.getMinecraft().gameSettings.limitFramerate = 260;
 			Display.setTitle(Display.getTitle().replace("[Unfocused] ", ""));
